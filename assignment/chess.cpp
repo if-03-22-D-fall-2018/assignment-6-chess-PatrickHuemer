@@ -45,7 +45,11 @@
 
  bool 	add_piece (ChessBoard chess_board, File file, Rank rank, struct ChessPiece piece)
  {
-   return false;
+   if (!is_occupied(file >= 'a' && file <= 'h' && rank >= 1 && rank <= 8)) {
+     chess_board[rank-'a'][file-1].piece;
+     chess_board[rank-'a'][file-1].is_occupied;
+     return true;
+   }
  }
 
  struct ChessPiece 	get_piece (ChessBoard chess_board, File file, Rank rank)
